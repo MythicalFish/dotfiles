@@ -1,0 +1,94 @@
+{
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true,
+    "**/log": true
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "explorer.openEditors.visible": 0,
+  "editor.fontSize": 14,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "editor.acceptSuggestionOnEnter": "off",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0,
+  "window.newWindowDimensions": "inherit",
+  // VIM
+  "vim.useSystemClipboard": true,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors": {
+    "normal": "#000",
+    "insert": "#ff0054",
+    "visual": "#00ff1e",
+    "visualline": "#00ff1e",
+    "visualblock": "#00ff1e",
+    "replace": "#000000"
+  },
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "after": ["leader", "leader", "s"]
+    }
+  ],
+  "vim.easymotionMarkerFontFamily": "Source Sans Pro",
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.easymotionMarkerHeight": 20,
+  "vim.easymotionMarkerYOffset": 0,
+  "vim.easymotionKeys": "hkyuiopnmqwertzxcvbasdgjfHKLYUIOPNMQWERTZXCVBASDGJF",
+  "vim.easymotion": false,
+  "vim.easymotionMarkerBackgroundColor": "fuchsia",
+  "vim.easymotionMarkerForegroundColorOneChar": "#FFF",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#FFF",
+  "vim.ignorecase": false,
+  // "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.sneak": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#111",
+    "panel.background": "#181818",
+    "editor.background": "#0e0e0e",
+    "statusBar.background": "#000",
+    "statusBar.noFolderBackground": "#000",
+    "statusBar.debuggingBackground": "#000"
+  },
+  "vim.disableExtension": false,
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.rb"
+  ],
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.keymap": "none",
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": true,
+  "editor.renderControlCharacters": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "breadcrumbs.enabled": true,
+  "go.lintOnSave": "file",
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.colorTheme": "Popping and Locking",
+  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

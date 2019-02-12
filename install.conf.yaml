@@ -6,7 +6,8 @@
 
 - link:
     ~/.dotfiles: ""
-    ~/.config/kitty/kitty.conf: home/.config/kitty/kitty.conf
+    ~/.config/kitty/kitty.conf: configs/kitty.conf
+    ~/Library/Application Support/Code/User/settings.json: configs/vscode.json
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
