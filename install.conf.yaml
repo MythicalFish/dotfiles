@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.dotfiles: ""
+    ~/.config/kitty/kitty.conf: home/.config/kitty/kitty.conf
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
