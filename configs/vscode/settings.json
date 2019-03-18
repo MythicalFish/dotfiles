@@ -54,9 +54,9 @@
     "terminal.background": "#111",
     "panel.background": "#181818",
     "editor.background": "#0e0e0e",
-    "statusBar.background": "#000",
-    "statusBar.noFolderBackground": "#000",
-    "statusBar.debuggingBackground": "#000"
+    "statusBar.background": "#ff0054",
+    "statusBar.noFolderBackground": "#ff0054",
+    "statusBar.debuggingBackground": "#ff0054"
   },
   "vim.disableExtension": false,
   "todohighlight.include": [
@@ -90,5 +90,8 @@
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "workbench.colorTheme": "Popping and Locking",
   "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "advancedNewFile.exclude": {
+    "node_modules": true
+  }
 }

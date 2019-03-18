@@ -1,0 +1,108 @@
+[
+  // Note: use Karabiner to map left/right/up/down to space+h/l/j/k
+  {
+    "key": "alt+shift+cmd+ctrl+9",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+shift+cmd+ctrl+0",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "space",
+    "command": "list.select",
+    "when": "listFocus"
+  },
+  {
+    "key": "ctrl+cmd+t",
+    "command": "terminalTabs.createNamedTerminal"
+  },
+  /*
+   * Cmd+Space Focus loop
+   * Editor > Explorer > Quick Open > Editor
+   */
+  {
+    // Focus Editor when in QuickOpen
+    "key": "alt+ctrl+shift+cmd+tab",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "inQuickOpen"
+  },
+  {
+    // Focus List when in Editor
+    "key": "alt+ctrl+shift+cmd+tab",
+    "command": "workbench.view.explorer",
+    "when": "editorFocus"
+  },
+  {
+    // QuickOpen when in List
+    "key": "alt+ctrl+shift+cmd+tab",
+    "command": "workbench.action.quickOpen",
+    "when": "listFocus"
+  },
+  {
+    // Focus editor if in terminal
+    "key": "ctrl+`",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    // Focus terminal if already open
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus"
+    // "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+ctrl+shift+cmd+f",
+    "command": "filesExplorer.findInFolder"
+  },
+  {
+    // Focus Editor when in QuickOpen
+    "key": "alt+ctrl+shift+cmd+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  /*
+   * Toggle terminal like Chrome
+   */
+  {
+    "key": "alt+cmd+i",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  // Disable ctrl+d VIM collision
+  {
+    "key": "ctrl+d",
+    "command": "-deleteRight",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+backspace",
+    "command": "notifications.clearAll"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+enter",
+    "command": "workbench.action.keepEditor"
+  },
+  {
+    "key": "cmd+k enter",
+    "command": "-workbench.action.keepEditor"
+  },
+  {
+    "key": "cmd+n",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "-extension.advancedNewFile"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "workbench.action.files.newUntitledFile"
+  }
+]

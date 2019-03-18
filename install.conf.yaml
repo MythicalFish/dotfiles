@@ -7,8 +7,10 @@
 - link:
     ~/.dotfiles: ""
     ~/.config/kitty/kitty.conf: configs/kitty.conf
-    ~/Library/Application Support/Code/User/settings.json: configs/vscode.json
-    ~/Library/StickiesDatabase: configs/StickiesDatabase
+    ~/Library/Application Support/Code/User/settings.json: configs/vscode/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: configs/vscode/keybindings.json
+    ~/Library/Application Support/Code/User/snippets/javascript.json: configs/vscode/snippets/javascript.json
+    ~/Library/Application Support/Code/User/snippets/javascriptreact.json: configs/vscode/snippets/javascriptreact.json
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
