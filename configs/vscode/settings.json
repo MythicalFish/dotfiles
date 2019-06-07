@@ -14,35 +14,23 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.acceptSuggestionOnEnter": "off",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-great-icons",
   "window.zoomLevel": 0,
   "window.newWindowDimensions": "inherit",
   // VIM
   "vim.useSystemClipboard": true,
   "vim.statusBarColorControl": true,
-  "vim.statusBarColors": {
-    "normal": "#000",
-    "insert": "#ff0054",
-    "visual": "#00ff1e",
-    "visualline": "#00ff1e",
-    "visualblock": "#00ff1e",
-    "replace": "#000000"
-  },
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.statusBarColors.normal": "#000",
+  "vim.statusBarColors.insert": "#ff0054",
+  "vim.statusBarColors.visual": "#00ff1e",
+  "vim.statusBarColors.visualline": "#00ff1e",
+  "vim.statusBarColors.visualblock": "#00ff1e",
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["s"],
       "after": ["leader", "leader", "s"]
     }
   ],
-  "vim.easymotionMarkerFontFamily": "Source Sans Pro",
-  "vim.easymotionMarkerFontSize": "14",
-  "vim.easymotionMarkerHeight": 20,
-  "vim.easymotionMarkerYOffset": 0,
-  "vim.easymotionKeys": "hkyuiopnmqwertzxcvbasdgjfHKLYUIOPNMQWERTZXCVBASDGJF",
-  "vim.easymotion": false,
-  "vim.easymotionMarkerBackgroundColor": "fuchsia",
-  "vim.easymotionMarkerForegroundColorOneChar": "#FFF",
-  "vim.easymotionMarkerForegroundColorTwoChar": "#FFF",
   "vim.ignorecase": false,
   // "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
@@ -50,14 +38,6 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "explorer.confirmDragAndDrop": false,
   "git.autofetch": true,
-  "workbench.colorCustomizations": {
-    "terminal.background": "#111",
-    "panel.background": "#181818",
-    "editor.background": "#0e0e0e",
-    "statusBar.background": "#ff0054",
-    "statusBar.noFolderBackground": "#ff0054",
-    "statusBar.debuggingBackground": "#ff0054"
-  },
   "vim.disableExtension": false,
   "todohighlight.include": [
     "**/*.js",
@@ -88,10 +68,37 @@
   "breadcrumbs.enabled": true,
   "go.lintOnSave": "file",
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-  "workbench.colorTheme": "Popping and Locking",
   "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "advancedNewFile.exclude": {
     "node_modules": true
-  }
+  },
+  "randomThemeSwitcher.themeList": [
+    "Monokai",
+    "Popping and Locking",
+    "Horizon Bold",
+    "Deepdark Material Theme | Full Black Version",
+    "Panda Syntax",
+    "Winter is Coming (Dark Blue)",
+    "An Old Hope",
+    "Eva Dark Bold",
+    "Cobalt2",
+    "Hyper Term Black"
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#000",
+    "statusBar.noFolderBackground": "#000",
+    "statusBar.debuggingBackground": "#000"
+  },
+  "indentRainbow.colors": [
+    "rgba(255,0,255,0.15)",
+    "rgba(0,255,255,0.15)",
+    "rgba(255,255,0,0.15)",
+    "rgba(255,0,0,0.15)"
+  ],
+  "workbench.colorTheme": "Hyper Term Black",
+  "prettier.disableLanguages": [
+    "html"
+  ],
+  "go.useLanguageServer": true
 }

@@ -17,60 +17,53 @@
     "key": "ctrl+cmd+t",
     "command": "terminalTabs.createNamedTerminal"
   },
-  /*
-   * Cmd+Space Focus loop
-   * Editor > Explorer > Quick Open > Editor
-   */
   {
-    // Focus Editor when in QuickOpen
-    "key": "alt+ctrl+shift+cmd+tab",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "inQuickOpen"
-  },
-  {
-    // Focus List when in Editor
-    "key": "alt+ctrl+shift+cmd+tab",
-    "command": "workbench.view.explorer",
-    "when": "editorFocus"
-  },
-  {
-    // QuickOpen when in List
-    "key": "alt+ctrl+shift+cmd+tab",
-    "command": "workbench.action.quickOpen",
-    "when": "listFocus"
-  },
-  {
-    // Focus editor if in terminal
-    "key": "ctrl+`",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    // Focus terminal if already open
-    "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus"
-    // "when": "!terminalFocus"
-  },
-  {
-    "key": "alt+ctrl+shift+cmd+f",
-    "command": "filesExplorer.findInFolder"
-  },
-  {
-    // Focus Editor when in QuickOpen
-    "key": "alt+ctrl+shift+cmd+e",
+    // Focus Editor
+    "key": "alt+ctrl+shift+cmd+d",
     "command": "workbench.action.focusActiveEditorGroup"
   },
-  /*
-   * Toggle terminal like Chrome
-   */
   {
-    "key": "alt+cmd+i",
-    "command": "workbench.action.terminal.toggleTerminal"
+    // Focus List
+    "key": "alt+ctrl+shift+cmd+a",
+    "command": "workbench.view.explorer"
+  },
+  {
+    // QuickOpen
+    "key": "ctrl+shift+alt+cmd+s",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  /**
+   * TERMINAL
+   */
+  // Focus Terminal
+  {
+    "key": "alt+ctrl+shift+cmd+f",
+    "command": "workbench.action.terminal.focus"
   },
   {
     "key": "cmd+j",
     "command": "-workbench.action.togglePanel"
   },
+  {
+    "key": "alt+ctrl+shift+cmd+f",
+    "command": "workbench.action.togglePanel",
+    "when": "terminalFocus"
+  },
+  // Navigate terminals
+  {
+    "key": "ctrl+shift+alt+cmd+9",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  }
+  {
+    "key": "ctrl+shift+alt+cmd+0",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  }
   // Disable ctrl+d VIM collision
   {
     "key": "ctrl+d",
@@ -91,18 +84,22 @@
   },
   {
     "key": "cmd+n",
-    "command": "extension.advancedNewFile"
+    "command": "explorer.newFile",
+    "when": "listFocus"
   },
   {
     "key": "alt+cmd+n",
-    "command": "-extension.advancedNewFile"
+    "command": "explorer.newFolder",
+    "when": "listFocus"
   },
   {
-    "key": "cmd+n",
-    "command": "-workbench.action.files.newUntitledFile"
+    "key": "shift+cmd+f",
+    "command": "filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "alt+cmd+n",
-    "command": "workbench.action.files.newUntitledFile"
-  }
+    "key": "shift+alt+f",
+    "command": "-filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
 ]
