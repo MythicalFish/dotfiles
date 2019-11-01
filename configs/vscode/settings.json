@@ -19,7 +19,7 @@
   "window.newWindowDimensions": "inherit",
   // VIM
   "vim.useSystemClipboard": true,
-  "vim.statusBarColorControl": true,
+  "vim.statusBarColorControl": false,
   "vim.statusBarColors.normal": "#000",
   "vim.statusBarColors.insert": "#ff0054",
   "vim.statusBarColors.visual": "#00ff1e",
@@ -27,12 +27,18 @@
   "vim.statusBarColors.visualblock": "#00ff1e",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["s"],
-      "after": ["leader", "leader", "s"]
+      "before": [
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
     }
   ],
   "vim.ignorecase": false,
-  // "vim.enableNeovim": true,
+  "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.sneak": true,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -64,31 +70,23 @@
   "explorer.confirmDelete": false,
   "editor.minimap.enabled": true,
   "editor.renderControlCharacters": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
   "breadcrumbs.enabled": true,
   "go.lintOnSave": "file",
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "advancedNewFile.exclude": {
-    "node_modules": true
-  },
-  "randomThemeSwitcher.themeList": [
-    "Monokai",
-    "Popping and Locking",
-    "Horizon Bold",
-    "Deepdark Material Theme | Full Black Version",
-    "Panda Syntax",
-    "Winter is Coming (Dark Blue)",
-    "An Old Hope",
-    "Eva Dark Bold",
-    "Cobalt2",
-    "Hyper Term Black"
-  ],
+  "typescript.updateImportsOnFileMove.enabled": "never",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#000",
-    "statusBar.noFolderBackground": "#000",
-    "statusBar.debuggingBackground": "#000"
+    "list.activeSelectionForeground": "#FFFFFF",
+    "list.activeSelectionBackground": "#1a002c",
+    "list.inactiveSelectionForeground": "#FFFFFF",
+    "list.inactiveSelectionBackground": "#1a002c",
+    "list.hoverBackground": "#1a002c",
+    "sideBar.background": "#080808",
+    "sideBar.foreground": "#CCC",
+    "list.warningForeground": "#CCC",
+    "editorError.foreground": "#a10051",
+    "editorWarning.foreground": "#777777",
+    "focusBorder": "#ff00ea",
+    // "contrastBorder": "#ff00ea"
   },
   "indentRainbow.colors": [
     "rgba(255,0,255,0.15)",
@@ -100,5 +98,25 @@
   "prettier.disableLanguages": [
     "html"
   ],
-  "go.useLanguageServer": true
+  "go.useLanguageServer": true,
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "terminal.integrated.cursorStyle": "line",
+  "workbench.tree.renderIndentGuides": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.tabCloseButton": "off",
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "vim.replaceWithRegister": true,
+  // "workbench.editor.showTabs": false,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "kitty.app",
+  "workbench.editor.enablePreviewFromQuickOpen": false
 }

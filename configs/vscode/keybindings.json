@@ -14,10 +14,6 @@
     "when": "listFocus"
   },
   {
-    "key": "ctrl+cmd+t",
-    "command": "terminalTabs.createNamedTerminal"
-  },
-  {
     // Focus Editor
     "key": "alt+ctrl+shift+cmd+d",
     "command": "workbench.action.focusActiveEditorGroup"
@@ -51,28 +47,40 @@
   {
     "key": "alt+ctrl+shift+cmd+f",
     "command": "workbench.action.togglePanel",
-    "when": "terminalFocus"
+    "when": "panelFocus"
   },
   // Navigate terminals
   {
     "key": "ctrl+shift+alt+cmd+9",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
-  }
+  },
   {
     "key": "ctrl+shift+alt+cmd+0",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
-  }
+  },
+  // New terminal tab
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  // Close terminal tab
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
   // Disable ctrl+d VIM collision
   {
     "key": "ctrl+d",
     "command": "-deleteRight",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+alt+cmd+backspace",
-    "command": "notifications.clearAll"
   },
   {
     "key": "ctrl+shift+alt+cmd+enter",
@@ -101,5 +109,17 @@
     "key": "shift+alt+f",
     "command": "-filesExplorer.findInFolder",
     "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+g",
+    "command": "workbench.actions.view.problems"
+  },
+  {
+    "key": "shift+cmd+m",
+    "command": "-workbench.actions.view.problems"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+backspace",
+    "command": "workbench.action.closeEditorsToTheRight"
   },
 ]
