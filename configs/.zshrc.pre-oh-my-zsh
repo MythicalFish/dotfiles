@@ -1,0 +1,13 @@
+# HISTFILE=~/.histfile
+# HISTSIZE=1000
+# SAVEHIST=1000
+# setopt autocd
+# bindkey -e
+# zstyle :compinstall filename '/Users/jake/.zshrc'
+# autoload -Uz compinit
+# compinit
+
+# eval "$(starship init zsh)"
+
+
+source $HOME/.bashrc

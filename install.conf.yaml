@@ -1,12 +1,15 @@
 - defaults:
     link:
-      relink: true
+      force: true
 
 - clean: ["~"]
 
 - link:
     ~/.dotfiles: ""
     ~/.config/kitty/kitty.conf: configs/kitty.conf
+    ~/.config/karabiner/karabiner.json: configs/karabiner.json
+    ~/.zshrc: configs/.zshrc
+    ~/.zshrc.pre-oh-my-zshrc: configs/.zshrc.pre-oh-my-zsh
     ~/Library/Application Support/Code/User/settings.json: configs/vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: configs/vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets/javascript.json: configs/vscode/snippets/javascript.json
