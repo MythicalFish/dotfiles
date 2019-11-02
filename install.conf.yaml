@@ -8,6 +8,7 @@
     ~/.dotfiles: ""
     ~/.config/kitty/kitty.conf: configs/kitty.conf
     ~/.config/karabiner/karabiner.json: configs/karabiner.json
+    ~/.bash_profile: configs/.bash_profile
     ~/.zshrc: configs/.zshrc
     ~/.zshrc.pre-oh-my-zshrc: configs/.zshrc.pre-oh-my-zsh
     ~/Library/Application Support/Code/User/settings.json: configs/vscode/settings.json

@@ -111,7 +111,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editor.tabCloseButton": "off",
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "javascript.updateImportsOnFileMove.enabled": "never",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "vim.replaceWithRegister": true,
