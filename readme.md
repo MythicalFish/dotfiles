@@ -10,6 +10,7 @@ To **forcefully** install configs, just run `./install`
 - https://todoist.com/
 - https://trello.com/
 - https://evernote.com/
+- https://brew.sh/
 
 ### Fonts
 - [Fira Code](https://github.com/tonsky/FiraCode)

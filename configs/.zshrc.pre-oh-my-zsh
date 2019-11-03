@@ -6,5 +6,3 @@
 # zstyle :compinstall filename '/Users/jake/.zshrc'
 # autoload -Uz compinit
 # compinit
-
-source $HOME/.bash_profile
