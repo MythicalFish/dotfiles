@@ -19,22 +19,11 @@
   "window.newWindowDimensions": "inherit",
   // VIM
   "vim.useSystemClipboard": true,
-  "vim.statusBarColorControl": false,
-  "vim.statusBarColors.normal": "#000",
-  "vim.statusBarColors.insert": "#ff0054",
-  "vim.statusBarColors.visual": "#00ff1e",
-  "vim.statusBarColors.visualline": "#00ff1e",
-  "vim.statusBarColors.visualblock": "#00ff1e",
+  "vim.replaceWithRegister": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "s"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "s"
-      ]
+      "before": ["s"],
+      "after": ["leader", "leader", "s"]
     }
   ],
   "vim.ignorecase": false,
@@ -85,7 +74,7 @@
     "list.warningForeground": "#CCC",
     "editorError.foreground": "#a10051",
     "editorWarning.foreground": "#777777",
-    "focusBorder": "#ff00ea",
+    "focusBorder": "#ff00ea"
     // "contrastBorder": "#ff00ea"
   },
   "indentRainbow.colors": [
@@ -95,9 +84,7 @@
     "rgba(255,0,0,0.15)"
   ],
   "workbench.colorTheme": "Hyper Term Black",
-  "prettier.disableLanguages": [
-    "html"
-  ],
+  "prettier.disableLanguages": ["html"],
   "go.useLanguageServer": true,
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
@@ -114,8 +101,6 @@
   "terminal.integrated.shell.osx": "/bin/zsh",
   "javascript.updateImportsOnFileMove.enabled": "never",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  "vim.replaceWithRegister": true,
-  // "workbench.editor.showTabs": false,
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "kitty.app",
   "workbench.editor.enablePreviewFromQuickOpen": false

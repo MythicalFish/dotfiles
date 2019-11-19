@@ -36,19 +36,19 @@
    * TERMINAL
    */
   // Focus Terminal
-  {
-    "key": "alt+ctrl+shift+cmd+f",
-    "command": "workbench.action.terminal.focus"
-  },
+  // {
+  //   "key": "alt+ctrl+shift+cmd+f",
+  //   "command": "workbench.action.terminal.focus"
+  // },
   {
     "key": "cmd+j",
     "command": "-workbench.action.togglePanel"
   },
-  {
-    "key": "alt+ctrl+shift+cmd+f",
-    "command": "workbench.action.togglePanel",
-    "when": "panelFocus"
-  },
+  // {
+  //   "key": "alt+ctrl+shift+cmd+f",
+  //   "command": "workbench.action.togglePanel",
+  //   "when": "panelFocus"
+  // },
   // Navigate terminals
   {
     "key": "ctrl+shift+alt+cmd+9",
