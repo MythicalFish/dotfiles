@@ -1,3 +1,6 @@
+# Easy access
+alias configs='code ~/.dotfiles'
+
 # bashrc (bash-specific stuff & private keys)
 source $HOME/.bashrc
 

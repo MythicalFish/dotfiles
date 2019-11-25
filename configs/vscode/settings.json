@@ -103,5 +103,8 @@
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "kitty.app",
-  "workbench.editor.enablePreviewFromQuickOpen": false
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "git.allowForcePush": true,
+  "git.showPushSuccessNotification": true,
+  "gitlens.views.repositories.files.layout": "tree"
 }
