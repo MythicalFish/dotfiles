@@ -14,18 +14,32 @@
   // }
   "className='$'": {
     "prefix": "cn",
-    "body": ["className=\"${0}\""]
+    "body": [
+      "className=\"${0}\""
+    ]
   },
   "<div className='$'>": {
     "prefix": "dcn",
-    "body": ["<div className=\"${0}\">"]
+    "body": [
+      "<div className=\"${0}\">"
+    ]
   },
   "this.props.": {
     "prefix": "tp",
-    "body": ["this.props.${0}"]
+    "body": [
+      "this.props.${0}"
+    ]
   },
   "console.log($);": {
-    "prefix": "cl",
-    "body": ["console.log(${0});"]
+    "prefix": "log",
+    "body": [
+      "console.log('>>', ${0});"
+    ]
+  },
+  "translate($);": {
+    "prefix": "tr",
+    "body": [
+      "translate(${0})"
+    ]
   }
 }

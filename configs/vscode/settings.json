@@ -22,8 +22,14 @@
   "vim.replaceWithRegister": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["s"],
-      "after": ["leader", "leader", "s"]
+      "before": [
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
     }
   ],
   "vim.ignorecase": false,
@@ -74,8 +80,9 @@
     "list.warningForeground": "#CCC",
     "editorError.foreground": "#a10051",
     "editorWarning.foreground": "#777777",
-    "focusBorder": "#ff00ea"
-    // "contrastBorder": "#ff00ea"
+    "focusBorder": "#ff00ea",
+    "tab.activeBorder": "#ff00ea",
+    "tab.activeBackground": "#222"
   },
   "indentRainbow.colors": [
     "rgba(255,0,255,0.15)",
@@ -83,8 +90,7 @@
     "rgba(255,255,0,0.15)",
     "rgba(255,0,0,0.15)"
   ],
-  "workbench.colorTheme": "Hyper Term Black",
-  "prettier.disableLanguages": ["html"],
+  "prettier.resolveGlobalModules": true,
   "go.useLanguageServer": true,
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
@@ -106,5 +112,23 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "git.allowForcePush": true,
   "git.showPushSuccessNotification": true,
-  "gitlens.views.repositories.files.layout": "tree"
+  "gitlens.views.repositories.files.layout": "tree",
+  "window.nativeFullScreen": false,
+  "editor.padding.top": 50,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "java.project.importOnFirstTimeStartup": "automatic",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.home": "/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home",
+  "java.help.firstView": "gettingStarted",
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.colorTheme": "Hyper Term Black"
 }
